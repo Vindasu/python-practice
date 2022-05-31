@@ -5,4 +5,9 @@
 # * The person must have a signed consent form
 
 def can_skydive(age, has_consent_form):
-    pass
+    if age >= 18:
+        return True
+    elif has_consent_form == True:
+        return True
+    else:
+        return False
