@@ -9,4 +9,10 @@
 # at the last one you just wrote unless you really must.
 
 def calculate_sum(values):
-    pass
+    num_items = len(values)
+    if num_items == 0:
+        return None
+    sum = 0
+    for value in values:
+        sum += value
+    return sum
