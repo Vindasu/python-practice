@@ -8,4 +8,19 @@
 # Use the >= operator for greater than or equal to
 
 def max_of_three(value1, value2, value3):
-    pass
+    num = value1
+    if value2 >= num:
+        num = value2
+    if value3 >= num:
+        num = value3
+    return num
+
+
+#     if value1 >= value2 >= value3:
+#         return value1
+#     elif value2 >= value1 >= value3:
+#         return value2
+#     elif value3 >= value1 >= value2:
+#         return value3
+
+
