@@ -5,5 +5,10 @@
 # You can use the test number % 3 == 0 to test if a
 # number is divisible by 3.
 
+
+
 def is_divisible_by_3(number):
-    pass
+    if int(number) % 3 == 0:
+        return "fizz"
+    else:
+        return number
