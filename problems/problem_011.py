@@ -3,4 +3,7 @@
 # divisible by 5. Otherwise, just return the number.
 
 def is_divisible_by_5(number):
-    pass
+    if int(number) % 5 == 0:
+        return "buzz"
+    else:
+        return number

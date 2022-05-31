@@ -11,4 +11,11 @@
 # from memory.
 
 def fizzbuzz(number):
-    pass
+    if int(number) % 5 == 0 and int(number) % 3 == 0: 
+        return "fizzbuzz"
+    elif int(number) % 5 == 0:
+        return "buzz"
+    elif int(number) % 3 == 0:
+        return "fizz"
+    else:
+        return number
