@@ -8,4 +8,7 @@
 # for string objects.
 
 def is_palindrome(word):
-    pass
+    if word == ''.join(reversed(word)):
+        return True
+    else:
+        return False
