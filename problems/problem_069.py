@@ -23,15 +23,30 @@
 
 
 # class Student
-    # method initializer with required state "name"
-        # self.name = name
-        # self.scores = [] because its an internal state
+#     method initializer with required state "name"
+#         self.name = name
+#         self.scores = [] because its an internal state
 
-    # method add_score(self, score)
-        # appends the score value to self.scores
+#     method add_score(self, score)
+#         appends the score value to self.scores
 
-    # method get_average(self)
-        # if there are no scores in self.scores
-            # return None
-        # returns the sum of the scores divided by
-        # the number of scores
+#     method get_average(self)
+#         if there are no scores in self.scores
+#             return None
+#         returns the sum of the scores divided by
+#         the number of scores
+
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.scores = []
+
+    def add_score(self, score):
+        self.scores.append(score)
+    
+    def get_average(self):
+        if len(self.scores) == 0:
+            return None
+        else:
+            return sum(self.scores) / len(self.scores)
