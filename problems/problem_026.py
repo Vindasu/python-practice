@@ -13,4 +13,19 @@
 #   * An "F" for any other average
 
 def calculate_grade(values):
-    pass
+    grade = 0
+    for value in values:
+        grade = sum(values) / len(values)
+        if grade >= 90:
+            return'A'
+        elif grade >= 80:
+            return 'B'
+        elif grade >= 70:
+            return 'C'
+        elif grade >= 60:
+            return 'D'
+        else:
+            return 'F'
+
+
+
