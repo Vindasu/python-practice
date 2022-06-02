@@ -22,5 +22,14 @@
 #
 # This problem has pseudocode to guide you.
 
+
 def count_letters_and_digits(s):
-    pass
+
+    let = 0
+    dig = 0
+    for c in s:
+        if c.isdigit():
+            dig += 1
+        elif c.isalpha():
+            let += 1
+    return let, dig
