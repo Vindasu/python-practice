@@ -16,4 +16,21 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_even_numbers(n):
-    pass
+    if n < 0:
+        return None
+    total = 0
+    cnt = 0
+    while cnt <= n:
+        total += cnt * 2
+        cnt += 1
+    return total
+    
+#     num = (0)
+#     for number in n:
+#         num = number
+#         if num + 2 == n:
+#             return sum(num, n)
+#         if num + 2 > n:
+#             return sum(n)
+#         else:
+#             return num.append(num + 2)
