@@ -24,4 +24,5 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    req = length - len(str(number))
+    return req * pad + str(number)
