@@ -6,7 +6,7 @@
 #    * radius, a non-negative value
 #
 # Behavior:
-#    * calculate_perimeter()  # Returns the length of the perimater of the circle
+#    * calculate_perimeter()  # Returns the length of the perimater of the cir
 #    * calculate_area()       # Returns the area of the circle
 #
 # Example:
@@ -31,9 +31,6 @@ class Circle:
 
     def calculate_perimeter(self):
         return self.radius * 2 * math.pi
-    
+
     def calculate_area(self):
         return math.pi * pow(self.radius, 2)
-
-
-
